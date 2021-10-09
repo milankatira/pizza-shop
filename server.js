@@ -19,6 +19,9 @@ app.get('/', (req, res) => {
 
 app.use(expressLayout)
 
+//asset
+app.use(express.static('public'))
+
 app.set('views', path.join(__dirname, '/resources/views'))
 
 app.set('view engine', 'ejs')
